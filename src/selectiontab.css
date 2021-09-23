@@ -1,0 +1,252 @@
+kbd {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: #fff!important;
+    background-color: var(--warna-gray)!important;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .25);
+}
+
+.checkedRadio ~ .radioLabelAccount{
+    background: #00b3ee !important;
+    color: white;
+}
+.checkedRadio ~ .radioLabelAccount:hover{
+    background: #green !important;
+    color: white;
+}
+.radioAccount {
+    display: none !important;
+}
+.radioAccount:checked ~ .radioLabelAccount{
+    color: white !important;
+    /*background: #00b3ee !important;*/
+}
+input[type="radio"]:checked .radioAccount ~ label{
+    background: green !important;
+}
+.radioLabelAccount{
+    /*cursor: pointer;*/
+    color: var(--warna-black-white-semantic);
+    padding: 10px 20px;
+    /*border-right: 1px solid grey;*/
+}
+.radioLabelAccount:hover{
+    /*cursor: pointer;*/
+    /*font-weight: bold;*/
+    /*padding: 10px 20px;*/
+    /*background: rgba(15, 161, 247, 0.58) !important;*/
+    /*border-right: 1px solid grey;*/
+}
+.divAcountOpt>input[type="radio"]:checked {
+    background: red !important;
+}
+.spanSymbol{
+    color: white!important;
+    background-image: linear-gradient(#C3C3C3, #5B5B5C) !important;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    width: 50% !important;
+}
+.lastColor{
+    color: white!important;
+    min-width: 30% !important;
+}
+.changeTd{
+    /*width: 20% !important;*/
+}
+.red {
+    color: red;
+}
+.green {
+    color: green;
+}
+.white {
+    color: white!important;
+}
+.scene {
+    height: 70px;
+    /*border: 1px solid #CCC;*/
+    /*margin: 0px 0;*/
+    width: 100%;
+    perspective: 600px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    color: var(--warna-cssmenu);
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.card.is-flipped {
+    transform: rotateX(180deg);
+}
+
+.card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: var(--warna-black-white-semantic);
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    backface-visibility: hidden;
+    padding-top: 0px;
+    text-transform: uppercase!important;
+}
+.card__face table td{
+    padding:3px 15px;
+}
+.card__face--front {
+    background-image: linear-gradient(#8CC640,#119848);
+    border-radius:5px;
+}.card__face--front-red {
+     background-image: linear-gradient(#ED1D24,#78232A);
+     border-radius:5px;
+ }.card__face--front-yellow {
+      background-image: linear-gradient(#FCB03B,#F26427);
+      border-radius:5px;
+  }
+
+.card__face--back {
+    background-image: linear-gradient(#8CC640, #119848);
+    transform: rotateX(180deg);
+    border-radius:5px;
+}.card__face--back-red {
+     background-image: linear-gradient(#ED1D24, #78232A);
+     transform: rotateX(180deg);
+     border-radius:5px;
+ }.card__face--back-yellow {
+      background-image: linear-gradient(#FCB03B, #F26427);
+      transform: rotateX(180deg);
+      border-radius:5px;
+  }
+
+.box {
+    height: 37px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    width: 100%;
+    overflow: hidden;
+    /*background: #ff0;*/
+    display: inline-block;
+
+    width: 100%;
+    color: var(--warna-black-white-semantic);
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    padding-top: 0px;
+    text-transform: uppercase!important;
+}
+.box-selection {
+    height: 48px;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 100%;
+    display: inline-block;
+    color: var(--warna-black-white-semantic);
+    text-align: center;
+    font-weight: bold;
+    font-size: 11px;
+    padding-top: 0px;
+    text-transform: uppercase!important;
+}
+@media (max-width: 1199px){
+        .box-selection {
+            height: 48px;
+            border-radius: 6px;
+            overflow: hidden;
+            max-width: 272px;
+            width: 100%;
+            display: inline-block;
+            color: var(--warna-black-white-semantic);
+            text-align: center;
+            font-weight: bold;
+            font-size: 10px;
+            padding-top: 0px;
+            text-transform: uppercase!important;
+        }
+}
+@media (min-width: 1200px) and (max-width: 1300px){
+    .box-selection {
+        height: 48px;
+        border-radius: 6px;
+        overflow: hidden;
+        max-width: 330px;
+        width: 100%;
+        display: inline-block;
+        color: var(--warna-black-white-semantic);
+        text-align: center;
+        font-weight: bold;
+        font-size: 10px;
+        padding-top: 0px;
+        text-transform: uppercase!important;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1350px){
+    .box-selection {
+        height: 48px;
+        border-radius: 6px;
+        overflow: hidden;
+        max-width: 343px;
+        width: 100%;
+        display: inline-block;
+        color: var(--warna-black-white-semantic);
+        text-align: center;
+        font-weight: bold;
+        font-size: 10px;
+        padding-top: 0px;
+        text-transform: uppercase!important;
+    }
+}
+@media (min-width: 1351px) and (max-width: 1370px){
+    .box-selection {
+        height: 48px;
+        border-radius: 6px;
+        overflow: hidden;
+        max-width: 330px;
+        width: 100%;
+        display: inline-block;
+        color: var(--warna-black-white-semantic);
+        text-align: center;
+        font-weight: bold;
+        font-size: 10px;
+        padding-top: 0px;
+        text-transform: uppercase!important;
+    }
+}
+.box-selection > .box-inside{
+    height: 48px;
+}
+.box-selection > .box-inside table td,.box-selection > .hid-box table td{
+    padding:0px 15px;
+}
+.box-inside{
+    transition: all 1.2s ease-out;
+}
+.hid-box {
+    top: 100%;
+    position: relative;
+    transition: all 1.2s ease-out;
+    background: #428bca;
+    height: 100%;
+}
+.box > .active{
+    top: -37px;
+}
+.box-selection > .active{
+    top: -48px;
+}
+.bg-yellow-red-grad{
+    background-image: linear-gradient(#FCB03B, #F26427);
+}
+.bg-red-dark-grad{
+    background-image: linear-gradient(#ED1D24, #78232A);
+}
+.bg-green-dark-grad{
+    background-image: linear-gradient(#8CC640,#119848);
+}
